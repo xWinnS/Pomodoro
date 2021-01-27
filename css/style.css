@@ -1,0 +1,137 @@
+/*
+    cor fonte: #B7BED7
+    cor rose: #F87073
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    color: #B7BED7;
+    background-color: #1E2140;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+ul {
+    background-color: #151932;
+    padding: 26px 8px;
+    border-radius: 40px;
+}
+
+ul li {
+    display: inline;
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    color: #212645;
+    background-color: #F87073;
+    cursor: pointer;
+}
+
+svg {
+    position: relative;
+}
+
+.progress-ring__circle {
+    stroke-dasharray: 10 20;
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    margin: 0 auto;
+}
+
+.container{
+    position: absolute;
+    top: 380px;
+    text-align: center;
+}
+
+div .time {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+div .pause {
+    font-size: 18px;
+    letter-spacing: 8px;
+    cursor: pointer;
+}
+
+.gear {
+    opacity: 0.5;
+    margin-top: 30px;
+    width: 20px;
+    transition: 0.3s;
+}
+
+.gear:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.config {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0,0,0,0.9); */
+    background-color: #1e2140ea;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.config div {
+    background-color: #090c29;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.config div input {
+    font-size: 24px;
+    text-align: center;
+    width: 40px;
+    background-color: #B7BED7;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.config div span {
+    font-size: 32px;
+}
+
+.config div button {
+    font-size: 24px;
+    color: #B7BED7;
+    border-radius: 5px;
+    padding: 9px 18px;
+    background-color:#1E2140;
+    border: none;
+    margin-left: 5px;
+}
+
+.config div button:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+

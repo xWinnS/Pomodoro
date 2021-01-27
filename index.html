@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Pomodoro App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Pomodoro</h1>
+        <ul>
+            <li id="pomodoro">Pomodoro</li>
+            <li id="short_break">short break</li>
+            <li id="long_break">long break</li>
+        </ul>
+        <svg class="progress-ring" width="500" height="500">
+            <circle class="progress-ring__circle" stroke="#F87073" stroke-width="12" fill="transparent" r="200" cx="240" cy="250"/>
+        </svg>
+        <div class="container">
+            <p class="time">00:00</p>
+            <a class="pause">START</a> 
+        </div>
+        <img id="gear" class="gear" src="img/gear.svg"> 
+        <div class="config hidden">
+            <div>
+                <input  maxlength="2">
+                <span>:</span>
+                <input  maxlength="2">
+                <button class="btn_ok">OK</button>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
